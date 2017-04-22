@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/action_configure_search"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/search_entity"
+        android:id="@+id/linearLayout"
+        android:gravity="left"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchEntitySpinner"
+        android:entries="@array/array_search_entities"
+        android:drawSelectorOnTop="true"
+        tools:layout_conversion_absoluteX="105dp"
+        tools:layout_conversion_absoluteY="51dp"
+        tools:layout_conversion_absoluteWidth="264dp"
+        tools:layout_conversion_absoluteHeight="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/linearLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sortTypeSpinner"
+        android:entries="@array/array_search_type"
+        android:drawSelectorOnTop="true"
+        tools:layout_conversion_absoluteX="105dp"
+        tools:layout_conversion_absoluteY="95dp"
+        tools:layout_conversion_absoluteWidth="264dp"
+        tools:layout_conversion_absoluteHeight="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/searchEntitySpinner"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:text="@string/sort_type"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_width="100dp" />
+
+
+</android.support.constraint.ConstraintLayout>
